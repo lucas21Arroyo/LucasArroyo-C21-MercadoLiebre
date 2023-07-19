@@ -1,100 +1,131 @@
 /* HEADER */
-.home--header {
+.home--header{
     background-color: var(--colorAmarillo);
+    
 }
 
 .home--header-nav {
     margin-left: 10px;
 }
-
-.home--header-nav nav img {
-    width: 45%;
-    margin-top: 35px;
-    margin-left: 20px;
-}
-.home--header-barra{
+.home--header--conteiner-imgSearch{
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding-left: 5px;
 }
-.home--header-barra input{
-    margin-right: 4px;
+.header-logo{
+    width: 50%;
+}
+.header-logo img{
+    width: 100%;
+    padding: 10px;
+}
+
+.home--header-barra{
+    position: relative;
+    padding: 15px;
+    padding-left: 5px;
     width: 50%;
 }
 
-.home--header-lupa {
-    background-color: white;
-    margin-top: 1px;
-    border: solid 1px black;
-    width: 17px;
-    height: 18px;
-    text-align: center;
-    
+.home--header-search input {
+    margin-right: 4px;
+    width: 96%;
+    border-radius: 5px;
+    border: none;
+    padding: 6px;
 }
 
+.home--header-lupa i {
+    background-color: transparent;
+    position: absolute;
+    border: none;
+    font-size: 15px;
+    right: 40px;
+    top: 20px;
+}
 .home--header-navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home--header-options,.home--header-login {
     display: none;
+    gap: 15px;
+    margin: 15px;
 }
 
 .home--header-nav p {
     text-align: center;
-    font-size: 0.8rem;
+    font-size: 13px;
+    padding-right:10px ;
 }
+
 
 /* MAIN */
 .home--header-img {
-    height: 90px;
     width: 100%;
-}
-.home--header-banner{
-    width: 100%;
-    height: 120px;
-    object-fit: cover;
 }
 
+.home--header-banner {
+    width: 100%;
+}
 .home-main {
-    width: 90%;
-    padding: 10px 0 10px;
+    width: 100%;
+    padding: 15px 0 10px;
     display: flex;
     flex-wrap: wrap;
-    margin: 12px;
-    justify-content: center; 
 }
-
-.home--main-article img {
-    width: 100%; 
-    padding-top: 20px; 
+.home--main-visita,.home--main-ofertas{
+    width: 90%;
+    margin: auto;
+}
+.home--main-article{
+    margin:0 auto 10px
+}
+.home--main-visita img,.home--main-ofertas img {
+    width: 100%;
+    padding-top: 20px;
 }
 
 .homa--main-conteiner {
     background-color: white;
     border-top: 1px solid #ebebeb;
     padding: 15px;
-}
-
-.home--main-banner {
+    display: flex;
     width: 100%;
-    height: 100%;
+    flex-wrap: wrap;
 }
 
-.home--main-desc {
-    color: lightgreen;
+
+.home--main--visita-precio,.home--main--ofertas-precio{
+    width: 40%;
+}
+.home--main--visita-desc,.home--main--ofertas-desc {
+    color: #39b54a;
+    width: 60%;
 }
 
 .home--main-article h3 {
     display: none;
+    width: 100%;
+    color: grey;
+    padding-top: 20px;
 }
-
-.homa--main--conteiner-truck i {
-    border: 2px solid lightgreen;
-    border-radius: 50%;
-    width: 30px;
+.homa--main-conteiner{
+    position: relative;
+}
+.homa--main--conteiner-truck{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width:30px;
     height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 15px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    right: 20px;
+    top: -15px;
+    position: absolute;
 }
 
 .home-main h3 {
@@ -133,29 +164,59 @@
     color: var(--colorGrisClaro);
 }
 
-@media(min-width: 361px) {
+@media(min-width: 481px) {
 
     /* HEADER */
+    .home-main{
+        padding: 0
+    }
+    .home--header-nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
     div.burger-menu {
         display: none;
-        flex-wrap: wrap;
     }
-    .home--header-navbar{
+
+    .home--header-options,.home--header-login {
         display: flex;
     }
 
     /* MAIN */
-    
-    .home--main-article{
-        margin:0 0 5px 10px;
+    .home-main{
+        flex-direction: row;
     }
-    .home--main-article img:first-child { 
-     padding-top:0;
+    .home--main-ofertas,.home--main-visita {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
     }
     .home--main-article{
+        width: 42%;
+        margin:0 auto 10px;  
+        background-color: #ffffff;
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
-    .home--main-article div h3 {
+
+    .home--main-ofertas img:first-child,.home--main-visita img:first-child {
+        padding-top: 0;
+    }
+}
+@media(min-width: 600px) {
+    .home--header--conteiner-imgSearch{
+        width: 70%;
+    }
+    .home--header--conteiner-imgSearch p{
+        width: 30%;
+    }
+    .home--main-article{
+        width: 22%;
+    }
+    .home--header-nav{
         display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 }
