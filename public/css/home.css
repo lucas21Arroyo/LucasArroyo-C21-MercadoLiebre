@@ -187,6 +187,9 @@
     .home-main{
         flex-direction: row;
     }
+    .home--main-article h3 {
+        display: flex;
+    }
     .home--main-ofertas,.home--main-visita {
         display: flex;
         flex-wrap: wrap;
@@ -204,7 +207,7 @@
         padding-top: 0;
     }
 }
-@media(min-width: 600px) {
+@media(min-width: 769px) {
     .home--header--conteiner-imgSearch{
         width: 70%;
     }

@@ -1,0 +1,54 @@
+.register_main {
+    padding: 10px 15px;
+}
+
+.register_title {
+    font-size: 26px;
+    font-weight: 300;
+    width: 100%;
+    border-bottom: 1px solid darkgrey;
+    padding: 5px;
+    text-transform: uppercase;
+}
+
+.register__conteiner_form {
+    display: flex;
+    justify-content: center;
+}
+
+.register__form_input {
+    display: flex;
+    padding: 15px 0;
+    width: 100%;
+}
+
+.register__input {
+    border: none;
+    border-radius: 20px;
+    padding: 10px 13px;
+    width: 100%;
+    color: gray;
+    font-size: 20px;
+}
+
+.register__input:focus {
+    outline: none;
+    border: 1px solid cornflowerblue;
+    box-shadow: 0px 0px 10px cornflowerblue;
+}
+.register__form_title{
+    margin: 10px 0 0 0;
+}
+.register__conteiner_radio{
+    display: flex;
+    justify-content: space-around;
+}
+.register__form_radio{
+    font-size: 17px;
+    padding: 5px;
+}
+.register__form__check{
+    padding: 10px;
+    font-size: 17px;
+}
+

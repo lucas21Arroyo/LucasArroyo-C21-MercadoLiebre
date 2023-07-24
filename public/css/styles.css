@@ -1,2 +1,5 @@
 @import './home.css';
-@import './general.css'
+@import './general.css';
+@import './register.css';
+@import './login.css';
+@import './buttons.css';
