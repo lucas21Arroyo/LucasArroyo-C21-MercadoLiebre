@@ -32,7 +32,7 @@ p.main--articulo-precio {
     font-size: 18px;
 }
 
-.burger-menu{
+.burger-menu button{
     display: flex;
     justify-content: center;
     align-items: center;

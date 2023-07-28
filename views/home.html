@@ -18,7 +18,7 @@
         <section class="home--header-nav">
             <div class="home--header--conteiner-imgSearch">
                 <div class="header-logo">
-                    <a href="/"><img src="/images/logo-mercado-liebre.svg" alt="logo-mercado-liebre"></a> 
+                    <a href="/"><img src="/images/logo-mercado-liebre.svg" alt="logo-mercado-liebre"></a>
                 </div>
                 <div class="home--header-barra">
                     <form class="home--header-search">
@@ -32,9 +32,12 @@
             <p>
                 <i class="fa-solid fa-hand-holding-dollar"></i>Compra en cuotas y sin tarjetas de creditos
             </p>
-           
 
+            <div class="burger-menu">
+                <button onclick="document.querySelector('.home--header-navbar').classList.toggle('showMenu')"><i class="fas fa-bars"></i></button>
+            </div>
         </section>
+
         <section class="home--header-navbar">
             <ul class="home--header-options">
                 <li><a href="">Ofertas</a></li>
@@ -54,16 +57,14 @@
                 </li>
             </ul>
         </section>
-        <div class="burger-menu">
-            <i class="fas fa-bars"></i>
-        </div>
+
 
     </header>
     <main class="home-main">
         <section class="home--header-img">
             <img class="home--header-banner" src="/images/img-home-banner.jpg" alt="img-home-banner">
         </section>
-        <section>
+        <section class="home__main_section">
 
             <h2>Basado en tu última visita</h2>
             <div class="home--main-visita">
@@ -169,36 +170,27 @@
         </section>
     </main>
     <footer class="home-footer">
-        <section>
-            <article class="home--footer-section">
-                <div>
-                    <i class="fa-solid fa-credit-card" style="color: #0b39ef;"></i>
-                </div>
-                <h4>Pagá con tarjeta o en efectivo</h4>
-                <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y
-                    siempre es seguro!</p>
-            </article>
-            <article>
-                <article class="home--footer-section">
-                    <div>
-                        <i class="fa-solid fa-gift" style="color: #0b39ef;"></i>
-                    </div>
-                    <h4>Envío gratis desde $ 2.500</h4>
-                    <p>solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un
-                        beneficio de Mercado Puntos</p>
-                </article>
-                <article class="home--footer-section">
-                    <div>
-                        <i class="fa-solid fa-user-shield" style="color: #0b39ef;"></i>
-                    </div>
-                    <h4>Seguridad, de principio a fin</h4>
-                    <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás
-                        siempre
-                        protegid@.</p>
-                </article>
-        </section>
-        <p class="home--footer--section-copy">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+        <article class="home--footer-section">
+            <i class="fa-solid fa-credit-card" style="color: #0b39ef;"></i>
+            <h4>Pagá con tarjeta o en efectivo</h4>
+            <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y
+                siempre es seguro!</p>
+        </article>
+        <article class="home--footer-section">
+            <i class="fa-solid fa-gift" style="color: #0b39ef;"></i>
+            <h4>Envío gratis desde $ 2.500</h4>
+            <p>solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un
+                beneficio de Mercado Puntos</p>
+        </article>
+        <article class="home--footer-section">
+            <i class="fa-solid fa-user-shield" style="color: #0b39ef;"></i>
+            <h4>Seguridad, de principio a fin</h4>
+            <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás
+                siempre
+                protegid@.</p>
+        </article>
     </footer>
+    <p class="home--footer--section-copy">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
 </body>
 
 </html>
