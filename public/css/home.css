@@ -1,0 +1,267 @@
+/* HEADER */
+.home--header{
+    background-color: var(--colorAmarillo);
+    
+}
+
+.home--header-nav {
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+.home--header--conteiner-imgSearch{
+    display: flex;
+    align-items: center;
+}
+.header-logo{
+    width: 50%;
+}
+.header-logo img{
+    width: 100%;
+    padding: 10px;
+}
+
+.home--header-barra{
+    position: relative;
+    padding: 15px;
+    padding-left: 5px;
+    width: 50%;
+}
+
+.home--header-search input {
+    margin-right: 4px;
+    width: 96%;
+    border-radius: 5px;
+    border: none;
+    padding: 6px;
+}
+
+.home--header-lupa i {
+    background-color: transparent;
+    position: absolute;
+    border: none;
+    font-size: 15px;
+    right: 40px;
+    top: 20px;
+}
+.home--header-navbar{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 0;
+    overflow: hidden;
+}
+
+.home--header-options,.home--header-login {
+    gap: 15px;
+    margin: 15px;
+    width: 40%;
+}
+.showMenu{
+    height: auto;
+}
+
+.home--header-nav p {
+    text-align: center;
+    font-size: 13px;
+    padding-right:10px ;
+}
+
+
+/* MAIN */
+.home--header-img {
+    width: 100%;
+}
+
+.home--header-banner {
+    width: 100%;
+}
+.home-main {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.home--main-visita,.home--main-ofertas{
+    width: 90%;
+    margin: auto;
+    align-items: start;
+}
+.home--main-article{
+    margin:0 auto 10px
+}
+.home--main-visita img,.home--main-ofertas img {
+    width: 100%;
+    padding-top: 20px;
+}
+
+.homa--main-conteiner {
+    background-color: white;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+
+.home--main--visita-precio,.home--main--ofertas-precio{
+    width: 40%;
+}
+.home--main--visita-desc,.home--main--ofertas-desc {
+    color: #39b54a;
+    width: 60%;
+}
+
+.home--main-article h3 {
+    color: grey;
+}
+.homa--main-conteiner h3{
+    height: 0;
+    overflow: hidden;
+}
+
+.homa--main-conteiner{
+    position: relative;
+}
+.homa--main--conteiner-truck{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width:30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    right: 20px;
+    top: -15px;
+    position: absolute;
+}
+
+.home-main h3 {
+    font-size: 16px;
+}
+
+/* FOOTER */
+.home--footer-section {
+    text-align: center;
+    align-items: center;
+}
+
+.home--footer-section i {
+    font-size: 50px;
+    margin-top: 80px;
+}
+
+.home--footer-section h4 {
+    font-size: 1.1rem;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.home--footer-section p {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: var(--colorGrisOscuro);
+    font-size: 0.9rem;
+}
+
+.home--footer--section-copy {
+    font-size: 0.8rem;
+    margin-top: 30px;
+    color: var(--colorGrisClaro);
+}
+
+@media(min-width: 481px) {
+
+    /* HEADER */
+    .home-main{
+        padding: 0
+    }
+    .home--header-navbar{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    div.burger-menu {
+        display: none;
+    }
+
+    .home--header-options,.home--header-login {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    /* MAIN */
+    .home-main{
+        flex-direction: row;
+    }
+    .home--main-ofertas,.home--main-visita {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .home--main-article{
+        width: 42%;
+        margin:0 auto 10px;  
+        background-color: #ffffff;
+    }
+
+    .home--main-ofertas img:first-child,.home--main-visita img:first-child {
+        padding-top: 0;
+    }
+    /* FOOTER */
+    .home-footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .home--footer-section{
+        width: 30%;
+    }
+    /* ANIMATIONS */
+    .home--main-article{
+        transition: all 0.7s ease;
+    }
+    .home--main-article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .homa--main--conteiner-truck i:hover{
+        animation: rotate 0.7s;
+    }
+    @keyframes rotate {
+        0%{
+            transform: rotate(0);
+        }
+        50%{
+            transform: rotate(-90deg);
+        }
+        100%{
+            transform: rotate(0);
+        }   
+    }
+    .homa--main-conteiner h3{ 
+        transition: all 0.7s ease;
+    }
+    .home--main-article:hover h3 {
+        height: 20px;
+    }
+}
+@media(min-width: 769px) {
+    .home--header--conteiner-imgSearch{
+        width: 70%;
+    }
+    .home--header--conteiner-imgSearch p{
+        width: 30%;
+    }
+    .home--main-article{
+        width: 22%;
+    }
+    .home--header-nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
